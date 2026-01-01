@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOHOAUTOS| DEARLERSHIP STORE</title>
+  <!-- Link to Custom CSS -->
+<link rel="stylesheet" href="style.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">JOHOAUTOS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home">
+    <div class="header-content">
+      <h1>WELCOME TO JOHOAUTOS NIG. LTD</h1>
+      <p>Your one-stop Auto shop for quality cars, both Local and Foreign used Vehicles at amazing prices</p>
+      <a href="#products" class="btn btn-primary">Patronize Us Today</a>
+    </div>
+  </header>
+
+  <!-- Featured Products Carousel -->
+  <section class="products">
+    <div class="container">
+      <h2>Available Vehicles</h2>
+      <div id="productCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./benz.jfif" class="d-block w-100" alt="Featured Product 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./camry.jfif" class="d-block w-100" alt="Featured Product 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./bmw.jfif" class="d-block w-100" alt="Featured Product 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm h-100">
+            <img src="./benz.jfif" class="card-img-top" alt="Product 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mecedess Bnez GLE 2017 MODEL</h5>
+              <p class="card-text">High-quality Machines with amazing features and unstopable speed.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm h-100">
+            <img src="./camry.jfif" class="card-img-top" alt="Product 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">2017 Toyota Camry xle</h5>
+              <p class="card-text">Stylish, durable, and affordable.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm h-100">
+            <img src="./bmw.jfif" class="card-img-top" alt="Product 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">BMW X3 2010 MODEL</h5>
+              <p class="card-text">Perfect choice for everyday use, (ROAD MASTER).</p>
+              <a href="#" class="btn btn-primary">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm h-100">
+            <img src="./honda.jfif" class="card-img-top" alt="Product 4">
+            <div class="card-body text-center">
+              <h5 class="card-title">2013 Honda Accord</h5>
+              <p class="card-text">Top-quality item with great interiors and body look.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <h2>Subscribe to Our Newsletter for latest update</h2>
+      <p>Get the latest updates and special offers delivered to your inbox directly.</p>
+      <form class="d-flex justify-content-center flex-wrap">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2026 JOHOAUTOS. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

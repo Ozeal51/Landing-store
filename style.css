@@ -1,0 +1,179 @@
+/* style.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #810808;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Header Section */
+header {
+  position: relative;
+  background: url('./honda.jfif') no-repeat center center/cover;
+  color: #f3eded;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay */
+}
+
+header .header-content {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease 0.5s;
+}
+
+header .btn-primary {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  animation: fadeIn 2s ease 1s;
+}
+
+/* FadeIn Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Product Section */
+.products {
+  padding: 60px 20px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Product Card Hover Effects */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card .btn-primary {
+  transition: background-color 0.3s;
+}
+
+.card:hover .btn-primary {
+  background-color: #0056b3;
+}
+
+/* Carousel Section */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.newsletter input[type="email"] {
+  max-width: 400px;
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .products h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter input[type="email"] {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .newsletter button {
+    display: block;
+    margin: 10px auto;
+  }
+}

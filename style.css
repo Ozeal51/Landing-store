@@ -17,7 +17,7 @@ body {
 /* Header Section */
 header {
   position: relative;
-  background: url('./benz.jpg') no-repeat center center/cover;
+  background: url('./Images/benz.jpg') no-repeat center center/cover;
   color: #f3eded;
   height: 80vh;
   display: flex;
